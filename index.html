@@ -1,15 +1,17 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-   <title>TVING</title>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <meta charset="UTF-8"/>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" minimum="1.0"/>
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="plugin/slick-theme.css">
+   <link rel="stylesheet" href="plugin/slick.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
-   <link rel="stylesheet" href="css/reset.css"/>
-   <link rel="stylesheet" href="css/main.css"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
    <script src="js/main.js"></script>
-   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script src="plugin/slick.min.js"></script>
 </head>
 
 <body>
@@ -30,139 +32,149 @@
       </header><!--header-->
 
       <div id="container">
-         <div id="slideArea">
+         <section id="slideArea">
             
-            <div class="inner">
-               <ul class="one-time">
-                  <li>
-                     <p class="s_img"><img src="resource/img/main0.jpg" alt="메인이미지0"/></p>
-                     <div class="txt_box">
-                        <p>
+            <ul class="one-time">
+               <li>
+                  <p class="s_img"><img src="resource/img/main0.jpg" alt="메인이미지0"/></p>
+                  <div class="inner">
+                     <div class="txtBox">
+                        <strong>
                            라스베가스의 매력적인 24시<br>
                            CSI:라스베가스 시즌1
-                        </p>
+                        </strong>
                         <span>라스베가스의 매력적인 24시를 접할 기회!</span>
                      </div>
-                  </li>
-                  <li>
-                     <p class="s_img"><img src="resource/img/main1.webp" alt="메인이미지0"/></p>
-                     <div class="txt_box">
-                        <p>
+                  </div>
+               </li>
+               <li>
+                  <p class="s_img"><img src="resource/img/main1.webp" alt="메인이미지0"/></p>
+                  <div class="inner">
+                     <div class="txtBox">
+                        <strong>
                            라스베가스의 매력적인 24시<br>
                            CSI:라스베가스 시즌1
-                        </p>
+                        </strong>
                         <span>라스베가스의 매력적인 24시를 접할 기회!</span>
                      </div>
-                  </li>
-                  <li>
-                     <p class="s_img"><img src="resource/img/main2.jpg" alt="메인이미지0"/></p>
-                     <div class="txt_box">
-                        <p>
+                  </div>
+               </li>
+               <li>
+                  <p class="s_img"><img src="resource/img/main2.jpg" alt="메인이미지0"/></p>
+                  <div class="inner">
+                     <div class="txtBox">
+                        <strong>
                            라스베가스의 매력적인 24시<br>
                            CSI:라스베가스 시즌1
-                        </p>
+                        </strong>
                         <span>라스베가스의 매력적인 24시를 접할 기회!</span>
                      </div>
-                  </li>
-                  <li>
-                     <p class="s_img"><img src="resource/img/main3.jpg" alt="메인이미지0"/></p>
-                     <div class="txt_box">
-                        <p>
+                  </div>
+               </li>
+               <li>
+                  <p class="s_img"><img src="resource/img/main3.jpg" alt="메인이미지0"/></p>
+                  <div class="inner">
+                     <div class="txtBox">
+                        <strong>
                            라스베가스의 매력적인 24시<br>
                            CSI:라스베가스 시즌1
-                        </p>
+                        </strong>
                         <span>라스베가스의 매력적인 24시를 접할 기회!</span>
                      </div>
-                  </li>
-                  <li>
-                     <p class="s_img"><img src="resource/img/main4.jpg" alt="메인이미지0"/></p>
-                     <div class="txt_box">
-                        <p>
+                  </div>
+               </li>
+               <li>
+                  <p class="s_img"><img src="resource/img/main4.jpg" alt="메인이미지0"/></p>
+                  <div class="inner">
+                     <div class="txtBox">
+                        <strong>
                            라스베가스의 매력적인 24시<br>
                            CSI:라스베가스 시즌1
-                        </p>
+                        </strong>
                         <span>라스베가스의 매력적인 24시를 접할 기회!</span>
                      </div>
-                  </li>
-               </ul>
-            </div>
+                  </div>
+               </li>
+            </ul>
 
-         </div>
+         </section><!--slideArea-->
          <script>
-            
+            $(function(){
+               $('.one-time').slick({
+                  dots: true,
+                  infinite: true,
+                  speed: 300,
+                  slidesToShow: 1,
+                  adaptiveHeight: true
+               });
+            });
          </script>
+         
 
-         <div id="tivingContent">
+         <section id="section1">
             <!--실제 사용 영역-->
             <div class="inner">
-               <h2>티빙에서 꼭 봐야하는 콘텐츠</h2>
-               <ul>
-                  <!--li width:310px-->
-                  <li>
-                     <div>
-                        <!-- <img src="resource/img/cont00.jpeg" alt="포스터이미지00"/> -->
-                     </div>
-                     <p>
-                        아직 최선을 다하지 않았을 뿐
-                     </p>
-                  </li>
-                  <li>
-                     <div>
-                        <!-- <img src="resource/img/cont01.jpeg" alt="포스터이미지01"/> -->
-                     </div>
-                     <p>
-                        여고추리반2
-                     </p>
-                  </li>
-                  <li>
-                     <div>
-                        <!-- <img src="resource/img/cont01.jpeg" alt="포스터이미지01"/> -->
-                     </div>
-                     <p>
-                        여고추리반2
-                     </p>
-                  </li>
-                  <li>
-                     <div>
-                        <!-- <img src="resource/img/cont01.jpeg" alt="포스터이미지01"/> -->
-                     </div>
-                     <p>
-                        여고추리반2
-                     </p>
-                  </li>
-                  <li>
-                     <div>
-                        <!-- <img src="resource/img/cont01.jpeg" alt="포스터이미지01"/> -->
-                     </div>
-                     <p>
-                        여고추리반2
-                     </p>
-                  </li>
-                  <li>
-                     <div>
-                        <!-- <img src="resource/img/cont01.jpeg" alt="포스터이미지01"/> -->
-                     </div>
-                     <p>
-                        여고추리반2
-                     </p>
-                  </li>
-                  <li>
-                     <div>
-                        <!-- <img src="resource/img/cont01.jpeg" alt="포스터이미지01"/> -->
-                     </div>
-                     <p>
-                        여고추리반2
-                     </p>
-                  </li>
-               </ul>
+               <h2>티빙 애니매이션 시리즈</h2>
+               <div class="tivingCon">
+                  <ul>
+                     <li>
+                        <p class="imgArea">
+                           <img src="resource/img/[더빙] 극장판 짱구는 못말려：격돌_ 낙서왕국과 얼추 네 명의 용사들.jpg" alt="포스터이미지01"/>
+                        </p>
+                        <p class="desc">
+                           여고추리반2
+                        </p>
+                     </li>
+                     <li>
+                        <p class="imgArea">
+                           <img src="resource/img/[더빙] 명탐정 코난：눈동자 속의 암살자 - 극장판 4기.jpg" alt="포스터이미지01"/>
+                        </p>
+                        <p class="desc">
+                           여고추리반2
+                        </p>
+                     </li>
+                     <li>
+                        <p class="imgArea">
+                           <img src="resource/img/[더빙] 명탐정 코난：비색의 탄환.jpg" alt="포스터이미지01"/>
+                        </p>
+                        <p class="desc">
+                           여고추리반2
+                        </p>
+                     </li>
+                     <li>
+                        <p class="imgArea">
+                           <img src="resource/img/[더빙] 명탐정 코난：칠흑의 추적자 - 극장판 13기.jpg" alt="포스터이미지01"/>
+                        </p>
+                        <p class="desc">
+                           여고추리반2
+                        </p>
+                     </li>
+                     <li>
+                        <p class="imgArea">
+                           <img src="resource/img/[더빙] 명탐정코난 대괴수 고메라 VS 가면사나이.jpg" alt="포스터이미지01"/>
+                        </p>
+                        <p class="desc">
+                           여고추리반2
+                        </p>
+                     </li>
+                     <li>
+                        <p class="imgArea">
+                           <img src="resource/img/[더빙] 명탐정코난 피아노 소나타 월광 살인사건.jpg" alt="포스터이미지01"/>
+                        </p>
+                        <p class="desc">
+                           여고추리반2
+                        </p>
+                     </li>
+                  </ul>
+               </div>
             </div>
-         </div>
+         </section>
          
-         <div id="event">
+         <section id="event">
             <div>
                <!-- <img src="img/event0.jpeg" alt="이벤트이미지"/> -->
             </div>
-         </div>
+         </section>
 
          <div id="bestContent">
             <h2>

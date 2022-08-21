@@ -2,7 +2,8 @@
 /* ############## wrap ############### */
 #wrap{width:100%; position:relative; overflow:hidden;}
 /* ############## header ############### */
-#header{width:100%; height:80px; background:#ccc; text-align:right;}
+#header{position:fixed; left:0; top:0; width:100%; height:80px; background:#000; text-align:right; transition:.3s ease all; z-index:9999;}
+#header.active{height:60px; background:rgba(255,255,255,0);}
 #header .inner{position:relative;}
 
 #logo{position:absolute; left:10px; top:50%; transform:translateY(-50%);}
@@ -14,5 +15,28 @@
 
 
 /* ############## container ############### */
+#container{width:100%; padding-top:80px;}
+
+/* ############## container / slideArea ############### */
+#slideArea{width:100%; position:relative;}
+#slideArea ul.one-time{margin-bottom:0;}
+#slideArea ul li{cursor:pointer;}
+#slideArea ul li .inner{position:relative; max-width:80%;}
+#slideArea .s_img{width:100%;}
+#slideArea .s_img img{display: block;}
+#slideArea .txtBox{position:absolute; left:0; bottom:80px; color:#fff; font-weight:600; }
+#slideArea .txtBox strong{display:block; font-size:24px; padding-bottom:1rem; text-shadow:0 1px 2px #000;}
+#slideArea .slick-dots{position:absolute; left:0; bottom:0px; padding-bottom:10px;}
+#slideArea .slick-dots li{margin:0;}
+#slideArea .slick-dots li button{background:rgba(0,0,0,0);}
+#slideArea .slick-dots li button::before{color:#fff;}
+
+/* ############## container / tivingContent ############### */
+#section1{width:100%;}
+#section1 h2{padding:20px 0 30px; font-size:1.4rem; font-weight:600;}
+#section1 .tivingCon{position:relative;}
+#section1 ul{width:100%;}
+#section1 ul li{width:20%; position:absolute; top:0; left:0;}
+#section1 ul li .desc{position:absolute; left:0; bottom:0; color:#fff;}
 
 /* ############## footer ############### */
