@@ -1,9 +1,10 @@
 @charset "urf-8";
 /* ############## wrap ############### */
-#wrap{width:100%; position:relative; overflow:hidden;}
-h2{padding:20px 0 30px; font-size:1.4rem; font-weight:600;}
+body{background-color:#000;}
+#wrap{width:100%; position:relative; overflow:hidden; background-color:#000;}
+h2{padding:20px 0 30px; font-size:1.4rem; font-weight:600; color:#fff;}
 /* ############## header ############### */
-#header{position:fixed; left:0; top:0; width:100%; height:80px; background:#000; text-align:right; transition:.3s ease all; z-index:9999;}
+#header{position:fixed; left:0; top:0; width:100%; height:80px; background:linear-gradient(180deg,255,255,255,0.3); text-align:right; transition:.3s ease all; z-index:9999;}
 #header.active{height:60px; background:rgba(255,255,255,0);}
 #header .inner{position:relative;}
 
@@ -12,11 +13,14 @@ h2{padding:20px 0 30px; font-size:1.4rem; font-weight:600;}
 #gnb{width:100%; line-height:80px;}
 #gnb li{display: inline-block; margin-left:10px;}
 #gnb li a{font-weight:600; color:#fff; transition:.3s ease all;}
-#gnb li a:hover{color:#000;}
+#gnb li a:hover{color:#ff1f45;}
 
 
 /* ############## container ############### */
 #container{width:100%; padding-top:80px;}
+section li{padding-top:10px; transition:.3s ease all;}
+section li:hover{padding-top:0;}
+
 
 /* ############## container / slideArea ############### */
 #slideArea{width:100%; position:relative;}
@@ -35,10 +39,13 @@ h2{padding:20px 0 30px; font-size:1.4rem; font-weight:600;}
 /* ############## container / tivingContent ############### */
 #section1{width:100%;}
 #section1 .tivingCon{position:relative; height:30vw;}
-#section1 ul{width:100%; height:100%; position:absolute; display:flex; flex-direction: column; flex-wrap: wrap; justify-content: flex-start;}
-#section1 ul li{width:22%; margin-right:20px; cursor:pointer;}
+#section1 ul{width:100%; height:100%; position:absolute; display:flex; flex-direction: column; flex-wrap: wrap; justify-content: center;}
+#section1 ul li{width:22%; margin-right:20px; cursor:pointer; position:relative;}
+#section1 ul li:hover .desc{opacity:1;}
 #section1 ul li .imgArea img{border-radius: 10px;}
-#section1 ul li .desc{position:absolute; left:0; bottom:0; color:#fff; display:none;}
+#section1 ul li .desc{width:100%; height:100%; position:absolute; left:0; top:0; color:#fff; padding:20px 10px 0; box-sizing:border-box; background-color:rgba(0,0,0,.7); color:#fff; opacity:0; transition:.3s ease all; border-radius:10px;}
+#section1 ul li .desc em{display: block; padding-bottom:8px; font-size:.8rem; font-weight:600;}
+#section1 ul li .desc .expalin{font-size:.7rem;}
 
 /* ############## container / event ############### */
 #event{width:100%; position:relative; cursor:pointer;}
@@ -53,12 +60,12 @@ h2{padding:20px 0 30px; font-size:1.4rem; font-weight:600;}
 /* ############## container / bestContent ############### */
 #bestContent{width:100%;}
 #bestContent .btCon{width:100%; position:relative; height:28vw;}
-#bestContent .btCon ul{width:100%; height:100%; position:absolute; display:flex; flex-direction:column; flex-wrap:wrap; justify-content: flex-start;}
+#bestContent .btCon ul{width:100%; height:100%; position:absolute; display:flex; flex-direction:column; flex-wrap:wrap; justify-content: center;}
 #bestContent .btCon ul li{width:20%; margin-right:20px; cursor:pointer;}
 #bestContent .btCon ul li img{border-radius:10px;}
 
 /* ############## container / timeBest ############### */
-#timeBest{width:100%;}
+#timeBest{width:100%; padding-bottom:80px;}
 #timeBest .best{width:100%; position:relative; height:28vw;}
 #timeBest .best ul{width:100%; height:100%; position:absolute; padding-bottom:10px;}
 #timeBest .best ul li{width:20%; position:absolute; margin-right:10px; cursor:pointer;}
@@ -66,11 +73,19 @@ h2{padding:20px 0 30px; font-size:1.4rem; font-weight:600;}
 #timeBest .best ul li .ranking{position:absolute; right:0; bottom:-10px; font-size:2rem; font-weight:600; font-style:italic; color:#ccc;}
 
 /* ############## container / using ############### */
-#using{width:100%;  background-color:pink;}
+#using{width:100%;  background-color:#ff1f45;}
 #using .numArea{text-align: center;}
-#using .numArea p{display:inline-block; padding:80px 0; margin-right:30px;}
+#using .numArea p{display:inline-block; padding:80px 0; margin-right:30px; color:#fff;}
 #using .numArea p:last-child{margin-right:0;}
 #using .numArea p em{display:block; font-weight:600;}
-#using .numArea p .usingTit{font-size:1.4rem; padding-bottom:10px;}
+#using .numArea p .usingTit{font-size:2rem; padding-bottom:40px;}
+#using .numArea p .usingNum{font-size:1.2rem; font-style:italic;}
+
+/* ############## container / channel ############### */
+#channel{width:100%; padding-top:80px;}
+#channel .chanList{position:relative; height:18vw;}
+#channel .chanList ul{width:100%; height:100%; position:absolute; }
+#channel .chanList li{cursor:pointer; width:30%; margin-right:10px; position:absolute; left:0; top:50%; transform:translateY(-50%);}
+#channel .chanList li img{display:block; border-radius:10px; width:100%;}
 
 /* ############## footer ############### */
