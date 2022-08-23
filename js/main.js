@@ -1,9 +1,8 @@
-document.addEventListener("DOMContentLoaded",function(){
-   var tivingCon = document.querySelector('.tivingCon'),
-      slider = document.querySelector('.tivingCon ul'),
-      slide = document.querySelectorAll('.tivingCon ul li');
-   
-   for(var i = 0; i < slide.length; i++){
-      slide.style.left = i * 100 + '%';
+var $timeBest = document.querySelector('#timeBest .best'),
+   $slider = document.querySelector('#timeBest ul'),
+   $slide = document.querySelectorAll('#timeBest ul li'),
+   $slideHeight = 0;
+
+   for(var i = 0; i < $slide.length; i++){
+      $slide[i].style.left = i * 21 + '%';
    }
-});

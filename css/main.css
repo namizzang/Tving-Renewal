@@ -1,6 +1,7 @@
 @charset "urf-8";
 /* ############## wrap ############### */
 #wrap{width:100%; position:relative; overflow:hidden;}
+h2{padding:20px 0 30px; font-size:1.4rem; font-weight:600;}
 /* ############## header ############### */
 #header{position:fixed; left:0; top:0; width:100%; height:80px; background:#000; text-align:right; transition:.3s ease all; z-index:9999;}
 #header.active{height:60px; background:rgba(255,255,255,0);}
@@ -33,10 +34,43 @@
 
 /* ############## container / tivingContent ############### */
 #section1{width:100%;}
-#section1 h2{padding:20px 0 30px; font-size:1.4rem; font-weight:600;}
-#section1 .tivingCon{position:relative;}
-#section1 ul{width:100%;}
-#section1 ul li{width:20%; position:absolute; top:0; left:0;}
-#section1 ul li .desc{position:absolute; left:0; bottom:0; color:#fff;}
+#section1 .tivingCon{position:relative; height:30vw;}
+#section1 ul{width:100%; height:100%; position:absolute; display:flex; flex-direction: column; flex-wrap: wrap; justify-content: flex-start;}
+#section1 ul li{width:22%; margin-right:20px; cursor:pointer;}
+#section1 ul li .imgArea img{border-radius: 10px;}
+#section1 ul li .desc{position:absolute; left:0; bottom:0; color:#fff; display:none;}
+
+/* ############## container / event ############### */
+#event{width:100%; position:relative; cursor:pointer;}
+#event img{display: block;}
+
+/* ############## container / tvingSoon ############### */
+#tvingSoon{width:100%; height:50vw; position:relative; overflow:hidden;}
+#tvingSoon .bg{width:100%; height:100%; background-color:#000;}
+#tvingSoon .commingImg{width:100%; height:100%; position:absolute; left:0; top:0; transform:scale(1); opacity:1;}
+#tvingSoon .commingImg img{width:100%; height:100%;}
+
+/* ############## container / bestContent ############### */
+#bestContent{width:100%;}
+#bestContent .btCon{width:100%; position:relative; height:28vw;}
+#bestContent .btCon ul{width:100%; height:100%; position:absolute; display:flex; flex-direction:column; flex-wrap:wrap; justify-content: flex-start;}
+#bestContent .btCon ul li{width:20%; margin-right:20px; cursor:pointer;}
+#bestContent .btCon ul li img{border-radius:10px;}
+
+/* ############## container / timeBest ############### */
+#timeBest{width:100%;}
+#timeBest .best{width:100%; position:relative; height:28vw;}
+#timeBest .best ul{width:100%; height:100%; position:absolute; padding-bottom:10px;}
+#timeBest .best ul li{width:20%; position:absolute; margin-right:10px; cursor:pointer;}
+#timeBest .best ul li img{border-radius:10px;}
+#timeBest .best ul li .ranking{position:absolute; right:0; bottom:-10px; font-size:2rem; font-weight:600; font-style:italic; color:#ccc;}
+
+/* ############## container / using ############### */
+#using{width:100%;  background-color:pink;}
+#using .numArea{text-align: center;}
+#using .numArea p{display:inline-block; padding:80px 0; margin-right:30px;}
+#using .numArea p:last-child{margin-right:0;}
+#using .numArea p em{display:block; font-weight:600;}
+#using .numArea p .usingTit{font-size:1.4rem; padding-bottom:10px;}
 
 /* ############## footer ############### */
