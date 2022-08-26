@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      body{height: 100vh; font-family: 'Montserrat', sans-serif;}
+      section{height: 100%; display: flex; justify-content: center; align-items: center;}
+      .screen{height: 100%;
+         width: 100%;
+         position: absolute;
+         background-color: #facd49;}
+      li{display: inline-block;
+         float: left;
+         font-size: 42px;}
+         
+
+      .bluefont{color: #5d50c6;}
+         
+
+   </style>
+</head>
+<body>
+   <section>
+      <ul class="center scroll-skew">
+         <div class="screen scroll-scale"></div>
+         <li class="scroll-translate" data-offset="-0.2">scr</li>
+         <li class="scroll-translate" data-offset="-0.1">oll</li>
+         <li class="scroll-translate bluefont" data-offset="0">me.</li>
+      </ul>
+   </section>
+   <section></section>
+   <script>
+      window.addEventListener('scroll', e => {
+      let rate = window.pageYOffset,
+            dataPercent = rate / document.body.clientHeight,
+            targetsTranslate = document.querySelectorAll('.scroll-translate'),
+            targetsSkew = document.querySelectorAll('.scroll-skew'),
+            targetsScale = document.querySelectorAll('.scroll-scale');
+      [...targetsTranslate].map( t => {
+         let dataOffset = t.dataset.offset;
+         t.style.transform = `translateY(${rate * dataOffset}px)`
+      });
+      [...targetsSkew].map( t => {
+         t.style.transform = `skew(${dataPercent * -60}deg, 0)`
+      });
+      [...targetsScale].map ( t=> {
+         t.style.transform = `scale(${dataPercent}, 1)`
+      })
+   })   
+   </script>
+</body>
+</html>
