@@ -1,7 +1,7 @@
 @charset "urf-8";
 /* ############## wrap ############### */
-body{background-color:#000;}
-#wrap{width:100%; position:relative; overflow:hidden; background-color:#000;}
+body{background-color:#000; }
+#wrap{width:100%; position:relative; background-color:#000; }
 h2{padding:20px 0 30px; font-size:1.4rem; font-weight:600; color:#fff;}
 /* ############## header ############### */
 #header{position:fixed; left:0; top:0; width:100%; height:80px; background:linear-gradient(180deg,rgba(0,0,0,.5), transparent); text-align:right; transition:.3s ease all; z-index:9999;}
@@ -20,7 +20,8 @@ h2{padding:20px 0 30px; font-size:1.4rem; font-weight:600; color:#fff;}
 
 
 /* ############## container ############### */
-#container{width:100%; }
+#container{width:100%;}
+section{overflow: hidden;}
 section li{padding-top:10px; transition:.3s ease all;}
 section li:hover{padding-top:0;}
 
@@ -50,16 +51,32 @@ section li:hover{padding-top:0;}
 #section1 ul li .desc em{display: block; padding-bottom:8px; font-size:.8rem; font-weight:600;}
 #section1 ul li .desc .expalin{font-size:.7rem;}
 
+#section1 .modalPop{position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,.7); z-index:8888; opacity:0; pointer-events:none; transition:.3s ease all;}
+#section1 .modalPop.visible{opacity:1; pointer-events:auto; overflow:hidden;}
+#section1 .modalPop .close{width:100%; height:100%;}
+#section1 .modalPop .modalInn{position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:100%; max-width:1000px; background-color:#ccc; display:flex; align-items:center; padding:0 20px; box-sizing:border-box; background-color:rgba(0,0,0,.1); border-radius: 30px;}
+#section1 .modalPop .modalInn .descArea{width:70%; padding-right:10%;}
+#section1 .modalPop .modalInn h3{padding:30px 0 10px;}
+#section1 .modalPop .modalInn h4{font-size:1.3rem; color:#efefef; padding-bottom:10px;}
+#section1 .modalPop .modalInn .tage_detail{padding-bottom:30px; }
+#section1 .modalPop .modalInn .tage_detail p{display: inline-block; margin-right:10px; padding:3px 4px; border:1px solid #efefef; border-radius:3px; font-size:.7rem; font-weight:600; color:#efefef;}
+#section1 .modalPop .modalInn .btn{padding-bottom:30px;}
+#section1 .modalPop .modalInn .btn button{display:block; width:200px; height:60px; font-weight:600; font-size:1.2rem; color:#efefef; background-color:#ff1f45; border-radius: 3px;}
+#section1 .modalPop .modalInn .desc{line-height:1.6rem; color:#efefef; font-size:.8rem;}
+#section1 .modalPop .modalInn .desc p span:first-child{font-size:.9rem; margin-right:8px;}
+#section1 .modalPop .modalInn .explanation{padding:10px 0 20px;}
+#section1 .modalPop .modalInn .posterArea{width:20%}
+
+
 /* ############## container / event ############### */
-#event{width:100%; position:relative; cursor:pointer;}
-#event img{display: block;}
+#event{width:100%; cursor:pointer;}
+#event img{display:block;}
 
 /* ############## container / tvingSoon ############### */
-#tvingSoon{width:100%; height:100vw; position:relative; overflow:hidden;}
-#tvingSoon .bg{width:100%; height:100%; background-color:#f00;}
-#tvingSoon.fixe .commingImg{position:fixed; left:0; top:0;}
-#tvingSoon .commingImg{width:100%; height:100vh; position:absolute; left:0; top:0; transform:scale(1); opacity:1; transition:.3s ease all;}
-#tvingSoon .commingImg img{width:100%; height:100%;}
+#tvingSoon{width:100%; height:300vh; background-color:#ff1f45;}
+#tvingSoon .scrollBase{width:100%; height:100vh; position:sticky; top:0; overflow:hidden;}
+#tvingSoon .scrollBase .bg{width:100%; height:100%; background-color:pink;}
+#tvingSoon .scrollBase .commingImg{width:100%; height:100%; position:absolute; left:0; top:0; transition:.3s ease all;}
 
 /* ############## container / bestContent ############### */
 #bestContent{width:100%;}
@@ -96,14 +113,12 @@ section li:hover{padding-top:0;}
 #footer{width:100%;}
 #footer .topInfo{width:100%; height:40px; color:#efefef; border-bottom:1px solid #efefef; padding-bottom:8px;}
 #footer .topInfo>div{float:left; height:100%;}
-#footer .topInfo .notice{width:60%; display:flex; overflow:hidden;}
+#footer .topInfo .notice{width:100%; display:flex; overflow:hidden;}
 #footer .topInfo .notice h3{line-height:40px; width:10%;}
 #footer .topInfo .notice .noticeBox{position:relative; width:90%;}
 #footer .topInfo .notice ul{position:absolute;}
 #footer .topInfo .notice li{line-height:40px; padding-left:20px; box-sizing:border-box;}
 #footer .topInfo .notice li a{color:#efefef; vertical-align:middle;}
-#footer .topInfo .brandShop{width:20%; background-color:pink;}
-#footer .topInfo .group{width:20%; background-color:blue;}
 
 #footer .util{padding:24px 0;}
 #footer .util a{color:#efefef; margin-right:10px; font-size:.9rem;}
