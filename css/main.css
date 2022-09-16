@@ -99,8 +99,8 @@ section li:hover{padding-top:0;}
 #using .numArea p{display:inline-block; padding:80px 0; margin-right:30px; color:#fff;}
 #using .numArea p:last-child{margin-right:0;}
 #using .numArea p em{display:block; font-weight:600;}
-#using .numArea p .usingTit{font-size:2rem; padding-bottom:40px;}
-#using .numArea p .usingNum{font-size:1.2rem; font-style:italic;}
+#using .numArea p .usingTit{font-size:1.2rem; padding-bottom:40px;}
+#using .numArea p .usingNum{font-size:1.8rem; font-style:italic;}
 
 /* ############## container / channel ############### */
 #channel{width:100%; padding-top:80px;}

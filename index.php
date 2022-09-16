@@ -27,7 +27,7 @@
                <li><a href="#">실시간</a></li>
                <li><a href="#">TV프로그램</a></li>
                <li><a href="#">영화</a></li>
-               <li><a href="#">로그인</a></li>
+               <li><a href="login.php">로그인</a></li>
             </ul>
          </div>
       </header><!--header-->

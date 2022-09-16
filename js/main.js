@@ -93,7 +93,7 @@ $(function(){//jQuery
                var $number = $current.attr('data-num');
    
                $({rate:0}).animate({rate:$number},{
-                  duration:2500,
+                  duration:4000,
                   progress:function(){
                      var $now = this.rate;
                      $current.text(Math.ceil($now));
