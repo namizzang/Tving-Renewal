@@ -92,7 +92,7 @@
             <ul>
                <li>
                   <p class="imgArea">
-                     <img src="resource/img/[더빙] 극장판 짱구는 못말려：격돌_ 낙서왕국과 얼추 네 명의 용사들.jpg" alt="포스터이미지01" />
+                     <img src="resource/img/1.jpg" alt="포스터이미지01" />
                   </p>
                   <p class="desc">
                      <em class="">[더빙]</em>
@@ -108,7 +108,7 @@
                </li>
                <li>
                   <p class="imgArea">
-                     <img src="resource/img/[더빙] 명탐정 코난：눈동자 속의 암살자 - 극장판 4기.jpg" alt="포스터이미지01" />
+                     <img src="resource/img/2.jpg" alt="포스터이미지01" />
                   </p>
                   <p class="desc">
                      <em class="">[더빙]</em>
@@ -124,7 +124,7 @@
                </li>
                <li>
                   <p class="imgArea">
-                     <img src="resource/img/[더빙] 명탐정 코난：비색의 탄환.jpg" alt="포스터이미지01" />
+                     <img src="resource/img/3.jpg" alt="포스터이미지01" />
                   </p>
                   <p class="desc">
                      <em class="">[더빙]</em>
@@ -140,7 +140,7 @@
                </li>
                <li>
                   <p class="imgArea">
-                     <img src="resource/img/[더빙] 명탐정 코난：칠흑의 추적자 - 극장판 13기.jpg" alt="포스터이미지01" />
+                     <img src="resource/img/4.jpg" alt="포스터이미지01" />
                   </p>
                   <p class="desc">
                      <em class="">[더빙]</em>
@@ -156,7 +156,7 @@
                </li>
                <li>
                   <p class="imgArea">
-                     <img src="resource/img/[더빙] 명탐정코난 대괴수 고메라 VS 가면사나이.jpg" alt="포스터이미지01" />
+                     <img src="resource/img/5.jpg" alt="포스터이미지01" />
                   </p>
                   <p class="desc">
                      <em>[더빙]</em>
@@ -172,7 +172,7 @@
                </li>
                <li>
                   <p class="imgArea">
-                     <img src="resource/img/[더빙] 명탐정코난 피아노 소나타 월광 살인사건.jpg" alt="포스터이미지01" />
+                     <img src="resource/img/6.jpg" alt="포스터이미지01" />
                   </p>
                   <p class="desc">
                      <em class="">[더빙]</em>
@@ -219,7 +219,7 @@
             </div>
             <div class="posterArea">
                <p class="image">
-                  <img src="resource/img/[더빙] 극장판 짱구는 못말려：격돌_ 낙서왕국과 얼추 네 명의 용사들.jpg" alt="[더빙] 극장판 짱구는 못말려：격돌_ 낙서왕국과 얼추 네 명의 용사들" />
+                  <img src="resource/img/1.jpg" alt="[더빙] 극장판 짱구는 못말려：격돌_ 낙서왕국과 얼추 네 명의 용사들" />
                </p>
             </div>
          </div>
@@ -254,7 +254,7 @@
             <ul>
                <li>
                   <p>
-                     <img src="resource/img/[무삭제판] 배틀로얄.png" alt="포스터이미지00" />
+                     <img src="resource/img/7.png" alt="포스터이미지00" />
                   </p>
                </li>
                <li>
@@ -391,37 +391,32 @@
             <ul>
                <li>
                   <p class="img">
-                     <img src="resource/img/CH.노는언니.png" alt="best0">
+                     <img src="resource/img/8.png" alt="best0">
                   </p>
                </li>
                <li>
                   <p class="img">
-                     <img src="resource/img/CH.무엇이든 물어보살.jpg" alt="best0">
-                  </p>
-               </li>
-               <!-- <li>
-                        <p class="img">
-                           <img src="resource/img/CH.비디오스타.jpg" alt="best0">
-                        </p>
-                     </li> -->
-               <li>
-                  <p class="img">
-                     <img src="resource/img/CH.어서와 한국은 처음이지.jpg" alt="best0">
+                     <img src="resource/img/9.jpg" alt="best0">
                   </p>
                </li>
                <li>
                   <p class="img">
-                     <img src="resource/img/CH.연애의 참견 시즌3.png" alt="best0">
+                     <img src="resource/img/11.jpg" alt="best0">
                   </p>
                </li>
                <li>
                   <p class="img">
-                     <img src="resource/img/CH.요트원정대.png" alt="best0">
+                     <img src="resource/img/12.png" alt="best0">
                   </p>
                </li>
                <li>
                   <p class="img">
-                     <img src="resource/img/CH.이십세기 힛-트쏭.png" alt="best0">
+                     <img src="resource/img/13.png" alt="best0">
+                  </p>
+               </li>
+               <li>
+                  <p class="img">
+                     <img src="resource/img/13.png" alt="best0">
                   </p>
                </li>
             </ul>
