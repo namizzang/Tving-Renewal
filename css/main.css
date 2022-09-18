@@ -116,7 +116,7 @@ section li:hover{padding-top:0;}
 #footer .topInfo .notice{width:100%; display:flex; overflow:hidden;}
 #footer .topInfo .notice h3{line-height:40px; width:10%;}
 #footer .topInfo .notice .noticeBox{position:relative; width:90%;}
-#footer .topInfo .notice ul{position:absolute;}
+#footer .topInfo .notice ul{position:absolute; top:0px; transition:.5s ease all;}
 #footer .topInfo .notice li{line-height:40px; padding-left:20px; box-sizing:border-box;}
 #footer .topInfo .notice li a{color:#efefef; vertical-align:middle;}
 
@@ -132,3 +132,6 @@ section li:hover{padding-top:0;}
 #footer .copyright{padding:20px 0 80px;}
 #footer .copyright a{color:#fff;}
 #footer .copyright strong{font-size:1rem;}
+
+/* ############## login.php ############### */
+#login{width:100%; height:100vh; background-color:#efefef;}

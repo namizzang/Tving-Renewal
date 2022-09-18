@@ -1,0 +1,20 @@
+#notice{padding:80px 0;}
+#notice_form{width:100%; color:#fff;}
+#notice_form p{width:100%; display:flex; margin-bottom:20px;}
+#notice_form p label{font-size:1.4rem; font-weight:600; width:10%;}
+#notice_form p input{display:inline-block; border-radius:10px;}
+#notice_form .title{width:100%; height:60px;}
+#notice_form .title label{line-height:60px; color:rgba(255,255,255,.8);}
+#notice_form .title input{width:90%; height:100%; padding-left:10px; box-sizing:border-box; background-color:rgba(255,255,255,.8); color:#000; font-size:1rem; font-weight:600;}
+#notice_form .desc{width:100%;}
+#notice_form .desc label{width:100%; display:block;}
+#notice_form .desc textarea{display:block; width:100%; height:300px; font-size:1rem; background-color:rgba(255,255,255,.8); padding:20px 0 0 10px; box-sizing:border-box; color:#000; border-radius:10px;}
+
+#noticeList{width:100%; height:90vh; padding-top:120px;}
+#noticeList .sub_title{font-size:.9rem; font-weight:600; color:#ccc; padding-bottom:40px;}
+#noticeList .inner{width:70%;}
+#noticeList ul{width:100%; color:#fff;}
+#noticeList li{line-height:60px; font-size:1rem; font-weight:600; border-bottom:1px solid #efefef;}
+#noticeList li:last-child{border-bottom:none;}
+#noticeList li span{padding:0 10px;}
+#noticeList li a{color:#fff; font-size:1rem; font-weight:600;}
